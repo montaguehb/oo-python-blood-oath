@@ -1,4 +1,4 @@
-from .bloodoath import BloodOath
+from bloodoath import BloodOath
 
 class Cult:
     pass
