@@ -1,8 +1,8 @@
 import unittest
 import datetime
-from follower import Follower
-from bloodoath import BloodOath
-from cult import Cult
+from lib.follower import Follower
+from lib.bloodoath import BloodOath
+from lib.cult import Cult
 
 class BloodoathTest(unittest.TestCase):
     def setUp(self) -> None:
@@ -30,7 +30,7 @@ class BloodoathTest(unittest.TestCase):
     def test_bloodoath_class_has_all(self):
         self.assertCountEqual(BloodOath.all, [self.bloodoath])
     
-    
-    
+    def test_first_oath(self):
+        self.assertEqual(BloodOath.first_oath(), self.bloodoath)
     
     
